@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Auswahl 1</title>
+  <title>Auswahl A</title>
 
   <style>
 
@@ -14,7 +14,7 @@
       padding: 0;
       width: 100%;
       height: 100%;
-      background: #000;
+      background: #000000;
       font-family: Arial, sans-serif;
       overflow: hidden;
     }
@@ -27,50 +27,83 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
 
-      padding: 40px 20px 0;
+      padding: 35px 20px 45px;
     }
 
-    .bild-bereich {
+    .inhalt {
       flex: 1;
-      width: 100%;
 
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
 
-      overflow: hidden;
+      width: 100%;
     }
 
-    .bild-bereich img {
-      display: block;
+    .karte {
+      width: 420px;
+      max-width: 80vw;
 
-      max-width: 90%;
-      max-height: 65vh;
+      background: #151515;
 
-      width: auto;
-      height: auto;
+      border: 2px solid #333333;
+      border-radius: 24px;
 
-      object-fit: contain;
+      padding: 25px 45px 30px;
 
-      /* Bild auf 150 % vergrößern */
-      transform: scale(1.5);
-      transform-origin: center center;
+      box-shadow: 0 8px 30px rgba(255,255,255,0.08);
+    }
+
+    .titel {
+      text-align: center;
+
+      color: rgb(244, 60, 60);
+
+      font-size: 58px;
+      font-weight: bold;
+
+      margin-bottom: 20px;
+    }
+
+    .zeile {
+      display: grid;
+      grid-template-columns: 1fr 60px 1fr;
+      align-items: center;
+
+      color: #ffffff;
+
+      font-size: 30px;
+      font-weight: bold;
+
+      padding: 8px 0;
+    }
+
+    .links {
+      text-align: right;
+    }
+
+    .pfeil {
+      text-align: center;
+      color: #888888;
+    }
+
+    .rechts {
+      text-align: left;
     }
 
     .weiter {
       width: min(420px, 80vw);
       min-height: 78px;
 
-      margin-top: 25px;
-      margin-bottom: 80px;
+      margin-top: 20px;
 
       border: 2px solid #3f8f3f;
       border-radius: 18px;
 
       background: #163816;
-      color: white;
+      color: #ffffff;
 
       font-size: 25px;
       font-weight: bold;
@@ -84,18 +117,68 @@
     }
 
   </style>
+
 </head>
 
 <body>
 
   <div class="seite">
 
-    <div class="bild-bereich">
+    <div class="inhalt">
 
-      <img
-        src="auswahl1.jpg"
-        alt="Auswahl 1"
-      >
+      <div class="karte">
+
+        <div class="titel">A</div>
+
+        <div class="zeile">
+          <div class="links">1</div>
+          <div class="pfeil">→</div>
+          <div class="rechts">3C</div>
+        </div>
+
+        <div class="zeile">
+          <div class="links">2</div>
+          <div class="pfeil">→</div>
+          <div class="rechts">B3</div>
+        </div>
+
+        <div class="zeile">
+          <div class="links">3</div>
+          <div class="pfeil">→</div>
+          <div class="rechts">2B</div>
+        </div>
+
+        <div class="zeile">
+          <div class="links">4</div>
+          <div class="pfeil">→</div>
+          <div class="rechts">A2</div>
+        </div>
+
+        <div class="zeile">
+          <div class="links">5</div>
+          <div class="pfeil">→</div>
+          <div class="rechts">1A</div>
+        </div>
+
+        <div class="zeile">
+          <div class="links">6</div>
+          <div class="pfeil">→</div>
+          <div class="rechts">D1</div>
+        </div>
+
+        <div class="zeile">
+          <div class="links">7</div>
+          <div class="pfeil">→</div>
+          <div class="rechts">4D</div>
+        </div>
+
+        <div class="zeile">
+          <div class="links">8</div>
+          <div class="pfeil">→</div>
+          <div class="rechts">C4</div>
+        </div>
+
+      </div>
 
     </div>
 
