@@ -46,24 +46,53 @@
       color: black;
       border: none;
       border-radius: 15px;
-      box-shadow: 0 3px 10px rgba(255,255,255,0.10);
       cursor: pointer;
+
+      /*
+        Das erhält den ursprünglichen hellen Untergrund
+        innerhalb des Buttons.
+      */
+      background-color: #f5f5f5;
     }
 
+    /* A und 1 */
     .rot {
-      background-color: rgba(244, 60, 60, 0.25);
+      background:
+        linear-gradient(
+          rgba(244, 60, 60, 0.25),
+          rgba(244, 60, 60, 0.25)
+        ),
+        #f5f5f5;
     }
 
+    /* B und 2 */
     .gelb {
-      background-color: rgba(242, 234, 62, 0.30);
+      background:
+        linear-gradient(
+          rgba(242, 234, 62, 0.30),
+          rgba(242, 234, 62, 0.30)
+        ),
+        #f5f5f5;
     }
 
+    /* C und 3 */
     .blau {
-      background-color: rgba(60, 118, 244, 0.25);
+      background:
+        linear-gradient(
+          rgba(60, 118, 244, 0.25),
+          rgba(60, 118, 244, 0.25)
+        ),
+        #f5f5f5;
     }
 
+    /* D und 4 */
     .violett {
-      background-color: rgba(198, 60, 244, 0.25);
+      background:
+        linear-gradient(
+          rgba(198, 60, 244, 0.25),
+          rgba(198, 60, 244, 0.25)
+        ),
+        #f5f5f5;
     }
 
     button:active {
@@ -95,6 +124,7 @@
       <button class="violett" onclick="window.location.href='auswahl8.html'">4</button>
 
     </div>
+
 
     <div class="counter-bereich">
 
