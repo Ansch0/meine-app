@@ -4,16 +4,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meine App</title>
+
+  <title>Auswahl</title>
+
+  <style>
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    body {
+      padding: 18px 30px;
+      box-sizing: border-box;
+    }
+
+    .button-bereich {
+      max-width: 800px;
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #ffffff;
+      margin-top: 5px;
+      margin-bottom: 18px;
+    }
+
+    .button-gruppe {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 20px;
+    }
+
+    /*
+      Counter beginnt jetzt direkt
+      unter dem oberen Button-Block
+    */
+    .counter-bereich {
+      margin-top: 8px;
+    }
+
+    .counter-bereich h1 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    button {
+      width: 100%;
+      height: 72px;
+
+      font-size: 26px;
+      font-weight: bold;
+      color: black;
+
+      border: none;
+      border-radius: 15px;
+
+      cursor: pointer;
+      background-color: #f5f5f5;
+    }
+
+    /* A und 1 */
+    .rot {
+      background:
+        linear-gradient(
+          rgba(244, 60, 60, 0.35),
+          rgba(244, 60, 60, 0.35)
+        ),
+        #f5f5f5;
+    }
+
+    /* B und 2 */
+    .gelb {
+      background:
+        linear-gradient(
+          rgba(242, 234, 62, 0.40),
+          rgba(242, 234, 62, 0.40)
+        ),
+        #f5f5f5;
+    }
+
+    /* C und 3 */
+    .blau {
+      background:
+        linear-gradient(
+          rgba(60, 118, 244, 0.35),
+          rgba(60, 118, 244, 0.35)
+        ),
+        #f5f5f5;
+    }
+
+    /* D und 4 */
+    .violett {
+      background:
+        linear-gradient(
+          rgba(198, 60, 244, 0.35),
+          rgba(198, 60, 244, 0.35)
+        ),
+        #f5f5f5;
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-  <h1>Meine App</h1>
+  <div class="button-bereich">
 
-  <button onclick="window.location.href='seite2.html'">
-    Weiter
-  </button>
+    <h1>Clockwise</h1>
+
+    <div class="button-gruppe">
+
+      <button class="rot" onclick="window.location.href='auswahl1.html'">A</button>
+      <button class="rot" onclick="window.location.href='auswahl2.html'">1</button>
+
+      <button class="gelb" onclick="window.location.href='auswahl3.html'">B</button>
+      <button class="gelb" onclick="window.location.href='auswahl4.html'">2</button>
+
+      <button class="blau" onclick="window.location.href='auswahl5.html'">C</button>
+      <button class="blau" onclick="window.location.href='auswahl6.html'">3</button>
+
+      <button class="violett" onclick="window.location.href='auswahl7.html'">D</button>
+      <button class="violett" onclick="window.location.href='auswahl8.html'">4</button>
+
+    </div>
+
+
+    <div class="counter-bereich">
+
+      <h1>Counter</h1>
+
+      <div class="button-gruppe">
+
+        <button class="rot" onclick="window.location.href='auswahl9.html'">A</button>
+        <button class="rot" onclick="window.location.href='auswahl10.html'">1</button>
+
+        <button class="gelb" onclick="window.location.href='auswahl11.html'">B</button>
+        <button class="gelb" onclick="window.location.href='auswahl12.html'">2</button>
+
+        <button class="blau" onclick="window.location.href='auswahl13.html'">C</button>
+        <button class="blau" onclick="window.location.href='auswahl14.html'">3</button>
+
+        <button class="violett" onclick="window.location.href='auswahl15.html'">D</button>
+        <button class="violett" onclick="window.location.href='auswahl16.html'">4</button>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 
