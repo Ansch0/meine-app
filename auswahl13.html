@@ -9,4 +9,16 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:#000;font-family:
 .links{text-align:right}.pfeil{text-align:center;color:#888}
 .weiter{width:min(420px,80vw);min-height:78px;margin-top:15px;margin-bottom:35px;border:2px solid #3f8f3f;border-radius:18px;background:#163816;color:#fff;font-size:25px;font-weight:bold;cursor:pointer}
 .weiter:active{transform:scale(.97);background:#245624}
+
+@media (max-width: 700px), (max-height: 850px) {
+html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
+.seite{height:auto;min-height:100svh;padding:clamp(10px,2vh,24px) 12px clamp(18px,3vh,35px)}
+.inhalt{flex:none;width:100%;min-height:0}
+.karte{box-sizing:border-box;width:min(420px,94vw);max-width:94vw;padding:clamp(12px,2.5vh,25px) clamp(18px,5vw,45px) clamp(14px,2.8vh,30px);border-radius:20px}
+.titel{gap:8px;margin-bottom:clamp(8px,1.8vh,20px)}
+.haupt{font-size:clamp(36px,7vh,58px)}
+.richtung{font-size:clamp(17px,2.8vh,24px)}
+.zeile{grid-template-columns:1fr clamp(36px,8vw,60px) 1fr;font-size:clamp(20px,3.5vh,30px);padding:clamp(3px,.8vh,8px) 0}
+.weiter{width:min(420px,94vw);min-height:clamp(54px,8vh,78px);margin-top:clamp(10px,2vh,15px);margin-bottom:0;font-size:clamp(19px,3vh,25px);flex-shrink:0}
+}
 </style></head><body><div class="seite"><div class="inhalt"><div class="karte"><div class="titel"><span class="haupt">C</span><span class="richtung">CCW</span></div><div class="zeile"><div class="links">1</div><div class="pfeil">→</div><div>A2</div></div><div class="zeile"><div class="links">2</div><div class="pfeil">→</div><div>2B</div></div><div class="zeile"><div class="links">3</div><div class="pfeil">→</div><div>B3</div></div><div class="zeile"><div class="links">4</div><div class="pfeil">→</div><div>3C</div></div><div class="zeile"><div class="links">5</div><div class="pfeil">→</div><div>C4</div></div><div class="zeile"><div class="links">6</div><div class="pfeil">→</div><div>4D</div></div><div class="zeile"><div class="links">7</div><div class="pfeil">→</div><div>D1</div></div><div class="zeile"><div class="links">8</div><div class="pfeil">→</div><div>1A</div></div></div></div><button class="weiter" onclick="window.location.href='gemeinsam.html'">Weiter →</button></div></body></html>
