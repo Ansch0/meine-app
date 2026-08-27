@@ -9,16 +9,24 @@
 
   <style>
 
-    body {
+    html, body {
       margin: 0;
-      padding: 30px;
+      padding: 0;
+      min-height: 100%;
+      background: #000000;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+    }
+
+    body {
+      padding: 30px;
+      box-sizing: border-box;
     }
 
     h1 {
       text-align: center;
       font-size: 36px;
+      color: #ffffff;
+      margin-top: 0;
       margin-bottom: 40px;
     }
 
@@ -40,33 +48,37 @@
     button {
       width: 100%;
       min-height: 90px;
+
       font-size: 26px;
       font-weight: bold;
-      color: black;
+      color: #000000;
+
       border: none;
       border-radius: 15px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+
+      box-shadow: 0 3px 12px rgba(255,255,255,0.10);
+
       cursor: pointer;
     }
 
-    /* A und 1 – Rot */
+    /* A und 1 */
     .rot {
-      background-color: rgba(244, 60, 60, 0.25);
+      background-color: rgb(244, 60, 60);
     }
 
-    /* B und 2 – Gelb */
+    /* B und 2 */
     .gelb {
-      background-color: rgba(242, 234, 62, 0.30);
+      background-color: rgb(242, 234, 62);
     }
 
-    /* C und 3 – Blau */
+    /* C und 3 */
     .blau {
-      background-color: rgba(60, 118, 244, 0.25);
+      background-color: rgb(60, 118, 244);
     }
 
-    /* D und 4 – Violett */
+    /* D und 4 */
     .violett {
-      background-color: rgba(198, 60, 244, 0.25);
+      background-color: rgb(198, 60, 244);
     }
 
     button:active {
